@@ -5,7 +5,7 @@ import Cart from '../assets/icon-cart.svg'
 
 function ProductPreview() {
   return (
-    <div className='bg-white w-[90%] h-[90vh] m-auto rounded-2xl'>
+    <div className='bg-white w-[90%] h-[60%] m-auto rounded-2xl'>
        <div>
         <img className='md:hidden rounded-t-2xl' src={producImgMobile} alt="" />
         <img className='hidden md:block' src={producImgDesktop} alt="" />
