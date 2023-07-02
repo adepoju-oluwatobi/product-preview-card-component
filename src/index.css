@@ -16,7 +16,7 @@
         line-height: 30px;
         padding: 5px 0;
         font-family: 'Fraunces';
-        @apply md:text-[32px] md:w-[10ch] md:py-8
+        @apply md:text-[42px] md:w-[10ch] md:py-8
     }
     .product-description{
         line-height: 18px;
@@ -28,12 +28,12 @@
         @apply md:text-base md:pb-8 md:w-[25ch]
     }
     .product-price{
-        @apply font-bold text-2xl text-green-400 font-[Fraunces] text-[#3c8067] md:text-2xl md:pb-8
+        @apply font-bold text-2xl text-green-400 font-[Fraunces] text-[#3c8067] md:text-2xl
     }
     .btn{
-        @apply bg-[#3c8067] p-2 mt-2 rounded-lg w-[100%] flex justify-center items-center text-white gap-2 text-xs md:text-xl font-bold hover:bg-[#1e3f33] md:p-2
+        @apply bg-[#3c8067] p-2 mt-2 md:mt-5 rounded-lg w-[100%] flex justify-center items-center text-white gap-2 text-xs md:text-xl font-bold hover:bg-[#1e3f33] md:p-2
     }
     .desktop-line-height{
-        line-height: 30px;
+        line-height: 50px;
     }
 }
