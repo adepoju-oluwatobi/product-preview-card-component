@@ -5,14 +5,17 @@ import Cart from '../assets/icon-cart.svg'
 
 function ProductPreview() {
   return (
-    <div className='bg-white w-[90%] h-[60%] m-auto rounded-2xl'>
-       <div>
+    <div className='bg-white w-[90%] h-[70%] m-auto rounded-2xl md:flex '>
+       <div className='md:w-[50%]'>
         <img className='md:hidden rounded-t-2xl' src={producImgMobile} alt="" />
-        <img className='hidden md:block' src={producImgDesktop} alt="" />
+        <img className='hidden rounded-l-2xl md:block' src={producImgDesktop} alt="" />
        </div>
-       <div className='p-4'>
+
+       {/** --------------------------------------------------------------------------- */}
+      <div className='md:w-[50%] p-4'>
+         <div className='p-4'>
         <p className='product-category'>PERFUME</p>
-        <p className='product-name'>Gabriel Essence Eau De Parfum</p>
+        <p className='product-name md:desktop-line-height'>Gabriel Essence Eau De Parfum</p>
         <p className='product-description'>
             A floral, solar and voluptuous interpretations composed by Olivier Polge, Herfume-Creator for the House of CHANEL.
         </p>
@@ -21,10 +24,11 @@ function ProductPreview() {
             <s className='opacity-50 text-xs'>$169.99</s>
         </div>
         <button className='btn'>
-            <img className='w-3' src={Cart} alt="" />
+            <img className='w-3 md:w-5' src={Cart} alt="" />
             Add to Cart
         </button>
        </div>
+      </div>
     </div>
   )
 }
