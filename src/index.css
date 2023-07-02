@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .product-category{
+        letter-spacing: 5px;
+        font-weight: 400;
+        font-size: 10px;
+        opacity: 70%;
+    }
+    .product-name{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        padding: 5px 0;
+        font-family: 'Fraunces';
+    }
+    .product-description{
+        line-height: 18px;
+        font-size: 11px;
+        width: 100%;
+        opacity: 50%;
+        padding: 5px 0;
+        font-weight: 600;
+    }
+    .product-price{
+        @apply font-bold text-2xl text-green-400 font-[Fraunces] text-[#3c8067]
+    }
+    .btn{
+        @apply bg-[#3c8067] p-2 mt-2 rounded-lg w-[100%] flex justify-center items-center text-white gap-2 text-xs font-bold hover:bg-[#1e3f33]
+    }
+}
